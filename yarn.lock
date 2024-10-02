@@ -6456,10 +6456,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/qs@npm:*, @types/qs@npm:6.9.15":
+"@types/qs@npm:*":
   version: 6.9.15
   resolution: "@types/qs@npm:6.9.15"
   checksum: 10c0/49c5ff75ca3adb18a1939310042d273c9fc55920861bd8e5100c8a923b3cda90d759e1a95e18334092da1c8f7b820084687770c83a1ccef04fb2c6908117c823
+  languageName: node
+  linkType: hard
+
+"@types/qs@npm:6.9.16":
+  version: 6.9.16
+  resolution: "@types/qs@npm:6.9.16"
+  checksum: 10c0/a4e871b80fff623755e356fd1f225aea45ff7a29da30f99fddee1a05f4f5f33485b314ab5758145144ed45708f97e44595aa9a8368e9bbc083932f931b12dbb6
   languageName: node
   linkType: hard
 
@@ -11770,7 +11777,7 @@ __metadata:
     "@types/node": "npm:^20.5.7"
     "@types/prismjs": "npm:^1.26.4"
     "@types/prop-types": "npm:15.7.12"
-    "@types/qs": "npm:6.9.15"
+    "@types/qs": "npm:6.9.16"
     "@types/react": "npm:^18.3.1"
     "@types/react-dom": "npm:^18.2.4"
     "@types/react-modal": "npm:^3.16.2"
@@ -11819,7 +11826,7 @@ __metadata:
     prism-react-renderer: "npm:^1.3.1"
     prismjs: "npm:^1.29.0"
     prop-types: "npm:^15.8.1"
-    qs: "npm:^6.11.1"
+    qs: "npm:^6.13.0"
     react: "npm:^18.3.1"
     react-ace: "npm:^12.0.0"
     react-day-picker: "npm:^8.8.0"
@@ -17746,7 +17753,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"qs@npm:6.13.0":
+"qs@npm:6.13.0, qs@npm:^6.13.0":
   version: 6.13.0
   resolution: "qs@npm:6.13.0"
   dependencies:
@@ -17755,7 +17762,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"qs@npm:^6.11.1, qs@npm:^6.11.2":
+"qs@npm:^6.11.2":
   version: 6.12.3
   resolution: "qs@npm:6.12.3"
   dependencies:
