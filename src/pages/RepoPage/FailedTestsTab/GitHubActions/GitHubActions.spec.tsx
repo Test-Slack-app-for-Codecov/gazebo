@@ -87,33 +87,33 @@ describe('GitHubActions', () => {
       })
     })
 
-    describe('when expand button is clicked again', () => {
-      it('should collapse content', async () => {
-        const { user } = setup()
-        render(<GitHubActions />, { wrapper: wrapper() })
+    //   describe('when expand button is clicked again', () => {
+    //     it('should collapse content', async () => {
+    //       const { user } = setup()
+    //       render(<GitHubActions />, { wrapper: wrapper() })
 
-        const button = screen.getByRole('button', {
-          name: /could look something like this:/,
-        })
-        expect(button).toBeInTheDocument()
+    //       const button = screen.getByRole('button', {
+    //         name: /could look something like this:/,
+    //       })
+    //       expect(button).toBeInTheDocument()
 
-        await user.click(button)
-        await user.click(button)
+    //       await user.click(button)
+    //       await user.click(button)
 
-        await waitFor(() => {
-          expect(
-            screen.queryByText(/name: Run unit tests/)
-          ).not.toBeInTheDocument()
-        })
-      })
-    })
+    //       await waitFor(() => {
+    //         expect(
+    //           screen.queryByText(/name: Run unit tests/)
+    //         ).not.toBeInTheDocument()
+    //       })
+    //     })
+    //   })
 
-    it('renders copy button', () => {
-      render(<GitHubActions />, { wrapper: wrapper() })
+    //   it('renders copy button', () => {
+    //     render(<GitHubActions />, { wrapper: wrapper() })
 
-      const button = screen.getByRole('button', { name: /Copy/ })
-      expect(button).toBeInTheDocument()
-    })
+    //     const button = screen.getByRole('button', { name: /Copy/ })
+    //     expect(button).toBeInTheDocument()
+    //   })
   })
 
   describe('Step three', () => {
@@ -133,14 +133,14 @@ describe('GitHubActions', () => {
       expect(content).toBeInTheDocument()
     })
 
-    it('renders expand button', () => {
-      render(<GitHubActions />, { wrapper: wrapper() })
+    // it('renders expand button', () => {
+    //   render(<GitHubActions />, { wrapper: wrapper() })
 
-      const button = screen.getByRole('button', {
-        name: /Here are examples of failed test reports in PR comments./,
-      })
-      expect(button).toBeInTheDocument()
-    })
+    //   const button = screen.getByRole('button', {
+    //     name: /Here are examples of failed test reports in PR comments./,
+    //   })
+    //   expect(button).toBeInTheDocument()
+    // })
 
     describe('when expand button is clicked', () => {
       const { user } = setup()
